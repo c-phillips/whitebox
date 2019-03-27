@@ -728,4 +728,5 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     cm.update();
+    window.scrollTo(0,1);
 });
