@@ -292,6 +292,9 @@ function CanvasManager(canvas){
 
     this.init = function(background="white"){
         let dim = Math.min(0.5*window.innerWidth, 0.5*window.innerHeight);
+        if(window.innerWidth < 450){
+            dim = window.innerWidth*0.94;
+        }
         this.cx.canvas.width = dim;
         this.cx.canvas.height = dim;
         

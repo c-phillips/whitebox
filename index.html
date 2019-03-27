@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Blackbox.JS</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" type="text/css" href="blackbox.css" />
 </head>
 <body>
@@ -26,9 +27,23 @@
                 <div class="newgame noselect" id="12:7">LARGE</div>
             </div>
         </div>
+
+        <div id="rules">
+        <a href="https://en.wikipedia.org/wiki/Black_Box_(game)" target="_blank">Rules&nbsp;</a><span style="font-size:0.5em; display:inline-block; line-height:1em; color:#999">(click for more info)</span><br/>
+        The object of the game is to locate the atoms <span style="color:#A3E4D7">&#x25C6;</span> by casting rays into the board. 
+        <br /><br />
+        To cast a ray, tap on one of the border squares. The result will be one of three options:
+        <ul>
+            <li>Hit <span style="color:#F5B7B1">&#x1F5D9;</span><br/><span style="color:#999">A ray directly encountered an atom</span></li>
+            <li>Reflection <span style="color:gray">&#x2589;</span><br/><span style="color:#999">A ray returned to its original position (or diagonal to a border atom)</span></li>
+            <li>Deflection <span style="color:#D7BDE2">&#x23FA;</span><br/><span style="color:#999">A ray passed next to an atom and bounced off</span></li>
+        </ul>
+        To check your results, hit the &#x27A4; button. 
+        </div>
+
     </div><!-- main -->
     <div id="title" class="noselect">WhiteBox
-        <a href="https://en.wikipedia.org/wiki/Black_Box_(game)" target="_blank">Rules</a></div>
+        <!-- </div> -->
     <script type="text/javascript" src="blackbox.js"></script>
 </body>
 </html>
