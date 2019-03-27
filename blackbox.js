@@ -705,7 +705,7 @@ function new_game(board_dims, num_gems){
 }
 
 function newgame_button(e){
-    document.querySelector("#canvas_container").innerHTML = '<canvas id="canvas">This message only shows if your browser doesn\'t support canvas elements</canvas>';
+    document.querySelector("#canvas_container").innerHTML = '<canvas id="canvas" class="noselect">This message only shows if your browser doesn\'t support canvas elements</canvas>';
 
     var target = e.target || e.srcElement;
     
